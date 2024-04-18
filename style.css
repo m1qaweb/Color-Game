@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Pixelify Sans", sans-serif;
+  color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  background-color: black;
+}
+h1 {
+  color: white;
+  font-size: 6rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  padding: 40px;
+}
+h3 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+section {
+  margin: 20px auto;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 12px;
+}
+
+.color-grid button {
+  all: unset;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background-color 100ms ease, transform 100ms ease;
+}
+
+.color-grid button:hover {
+  transform: scale(1.1);
+}
+.buttons > button {
+  border: none;
+  background-color: black;
+  padding: 20px 70px 70px 70px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.success-popup {
+  background-color: green;
+  color: white;
+}
+.error-popup {
+  background-color: red;
+  color: white;
+}
+.success-title,
+.error-title {
+  color: white;
+}
+.success-content,
+.error-content {
+  color: black;
+}
+.time-popup {
+  background-color: black;
+  color: white;
+}
+.locked-popup {
+  background-color: black;
+  color: red;
+}
+div.swal2-container button.swal2-styled.swal2-confirm {
+  background-color: #000000;
+  border: none;
+}

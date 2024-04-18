@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="game.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <h1>Color Game</h1>
+    <section class="prompt">
+      <div class="buttons">
+        <button data-difficulty="easy">Easy</button>
+        <button data-difficulty="normal">Normal</button>
+        <button data-difficulty="hard">Hard</button>
+      </div>
+      <div>
+        <h3>Guess: <span id="color-prompt">___</span></h3>
+      </div>
+    </section>
+    <section class="color-grid">
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </section>
+    <p id="score">Score: 0</p>
+    <p id="timer">Time: 0 sec</p>
+  </body>
+</html>
